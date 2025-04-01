@@ -1,0 +1,398 @@
+.container {
+    --col-size: 12;
+    --spacer: 30px;
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacer) / 2);
+    margin-right: calc(-1 * var(--spacer) / 2);
+}
+.col {
+    flex: 1 0;
+}
+.row > [class*="col-"] {
+    width: calc(100% / var(--col-size) * var(--col-number));
+    flex: 0 0 auto;
+    padding-left: calc(var(--spacer) / 2);
+    padding-right: calc(var(--spacer) / 2);
+}
+.g-0 {
+    --spacer: 0;
+}
+.col-1 {
+    --col-number: 1;
+}
+.col-2 {
+    --col-number: 2;
+}
+.col-3 {
+    --col-number: 3;
+}
+.col-4 {
+    --col-number: 4;
+}
+.col-5 {
+    --col-number: 5;
+}
+.col-6 {
+    --col-number: 6;
+}
+.col-7 {
+    --col-number: 7;
+}
+.col-8 {
+    --col-number: 8;
+}
+.col-9 {
+    --col-number: 9;
+}
+.col-10 {
+    --col-number: 10;
+}
+.col-11 {
+    --col-number: 11;
+}
+.col-12 {
+    --col-number: 12;
+}
+.row[class*="row-cols-"] > * {
+    width: calc(100% / var(--row-cols-number));
+    flex: 0 0 auto;
+    padding-left: calc(var(--spacer) / 2);
+    padding-right: calc(var(--spacer) / 2);
+}
+.row-cols-1 > * {
+    --row-cols-number: 1;
+}
+.row-cols-2 > * {
+    --row-cols-number: 2;
+}
+.row-cols-3 > * {
+    --row-cols-number: 3;
+}
+.row-cols-4 > * {
+    --row-cols-number: 4;
+}
+.row-cols-5 > * {
+    --row-cols-number: 5;
+}
+.row-cols-6 > * {
+    --row-cols-number: 6;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        --spacer: 20px;
+    }
+
+    .col-1 {
+        --col-number: 1;
+    }
+    .col-2 {
+        --col-number: 2;
+    }
+    .col-3 {
+        --col-number: 3;
+    }
+    .col-4 {
+        --col-number: 4;
+    }
+    .col-5 {
+        --col-number: 5;
+    }
+    .col-6 {
+        --col-number: 6;
+    }
+    .col-7 {
+        --col-number: 7;
+    }
+    .col-8 {
+        --col-number: 8;
+    }
+    .col-9 {
+        --col-number: 9;
+    }
+    .col-10 {
+        --col-number: 10;
+    }
+    .col-11 {
+        --col-number: 11;
+    }
+    .col-12 {
+        --col-number: 12;
+    }
+
+    .row-cols-1 > * {
+        --row-cols-number: 1;
+    }
+    .row-cols-2 > * {
+        --row-cols-number: 2;
+    }
+    .row-cols-3 > * {
+        --row-cols-number: 3;
+    }
+    .row-cols-4 > * {
+        --row-cols-number: 4;
+    }
+    .row-cols-5 > * {
+        --row-cols-number: 5;
+    }
+    .row-cols-6 > * {
+        --row-cols-number: 6;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        --spacer: 22px;
+    }
+    .col-1 {
+        --col-number: 1;
+    }
+    .col-2 {
+        --col-number: 2;
+    }
+    .col-3 {
+        --col-number: 3;
+    }
+    .col-4 {
+        --col-number: 4;
+    }
+    .col-5 {
+        --col-number: 5;
+    }
+    .col-6 {
+        --col-number: 6;
+    }
+    .col-7 {
+        --col-number: 7;
+    }
+    .col-8 {
+        --col-number: 8;
+    }
+    .col-9 {
+        --col-number: 9;
+    }
+    .col-10 {
+        --col-number: 10;
+    }
+    .col-11 {
+        --col-number: 11;
+    }
+    .col-12 {
+        --col-number: 12;
+    }
+
+    .row-cols-1 > * {
+        --row-cols-number: 1;
+    }
+    .row-cols-2 > * {
+        --row-cols-number: 2;
+    }
+    .row-cols-3 > * {
+        --row-cols-number: 3;
+    }
+    .row-cols-4 > * {
+        --row-cols-number: 4;
+    }
+    .row-cols-5 > * {
+        --row-cols-number: 5;
+    }
+    .row-cols-6 > * {
+        --row-cols-number: 6;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        --spacer: 24px;
+    }
+    .col-1 {
+        --col-number: 1;
+    }
+    .col-2 {
+        --col-number: 2;
+    }
+    .col-3 {
+        --col-number: 3;
+    }
+    .col-4 {
+        --col-number: 4;
+    }
+    .col-5 {
+        --col-number: 5;
+    }
+    .col-6 {
+        --col-number: 6;
+    }
+    .col-7 {
+        --col-number: 7;
+    }
+    .col-8 {
+        --col-number: 8;
+    }
+    .col-9 {
+        --col-number: 9;
+    }
+    .col-10 {
+        --col-number: 10;
+    }
+    .col-11 {
+        --col-number: 11;
+    }
+    .col-12 {
+        --col-number: 12;
+    }
+
+    .row-cols-1 > * {
+        --row-cols-number: 1;
+    }
+    .row-cols-2 > * {
+        --row-cols-number: 2;
+    }
+    .row-cols-3 > * {
+        --row-cols-number: 3;
+    }
+    .row-cols-4 > * {
+        --row-cols-number: 4;
+    }
+    .row-cols-5 > * {
+        --row-cols-number: 5;
+    }
+    .row-cols-6 > * {
+        --row-cols-number: 6;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+        --spacer: 30px;
+    }
+    .col-1 {
+        --col-number: 1;
+    }
+    .col-2 {
+        --col-number: 2;
+    }
+    .col-3 {
+        --col-number: 3;
+    }
+    .col-4 {
+        --col-number: 4;
+    }
+    .col-5 {
+        --col-number: 5;
+    }
+    .col-6 {
+        --col-number: 6;
+    }
+    .col-7 {
+        --col-number: 7;
+    }
+    .col-8 {
+        --col-number: 8;
+    }
+    .col-9 {
+        --col-number: 9;
+    }
+    .col-10 {
+        --col-number: 10;
+    }
+    .col-11 {
+        --col-number: 11;
+    }
+    .col-12 {
+        --col-number: 12;
+    }
+
+    .row-cols-1 > * {
+        --row-cols-number: 1;
+    }
+    .row-cols-2 > * {
+        --row-cols-number: 2;
+    }
+    .row-cols-3 > * {
+        --row-cols-number: 3;
+    }
+    .row-cols-4 > * {
+        --row-cols-number: 4;
+    }
+    .row-cols-5 > * {
+        --row-cols-number: 5;
+    }
+    .row-cols-6 > * {
+        --row-cols-number: 6;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    .col-1 {
+        --col-number: 1;
+    }
+    .col-2 {
+        --col-number: 2;
+    }
+    .col-3 {
+        --col-number: 3;
+    }
+    .col-4 {
+        --col-number: 4;
+    }
+    .col-5 {
+        --col-number: 5;
+    }
+    .col-6 {
+        --col-number: 6;
+    }
+    .col-7 {
+        --col-number: 7;
+    }
+    .col-8 {
+        --col-number: 8;
+    }
+    .col-9 {
+        --col-number: 9;
+    }
+    .col-10 {
+        --col-number: 10;
+    }
+    .col-11 {
+        --col-number: 11;
+    }
+    .col-12 {
+        --col-number: 12;
+    }
+
+    .row-cols-1 > * {
+        --row-cols-number: 1;
+    }
+    .row-cols-2 > * {
+        --row-cols-number: 2;
+    }
+    .row-cols-3 > * {
+        --row-cols-number: 3;
+    }
+    .row-cols-4 > * {
+        --row-cols-number: 4;
+    }
+    .row-cols-5 > * {
+        --row-cols-number: 5;
+    }
+    .row-cols-6 > * {
+        --row-cols-number: 6;
+    }
+}

@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cửa hàng thú cưng</title>
+        <!-- reset css -->
+        <link rel="stylesheet" href="/base/reset.css" />
+
+        <!-- common -->
+        <link rel="stylesheet" href="/common/container.css" />
+        <link rel="stylesheet" href="/common/button.css" />
+        <link rel="stylesheet" href="/common/dropModal/modal.css" />
+        <link rel="stylesheet" href="/common/shopping.css" />
+        <!-- add  to cart -->
+        <link rel="stylesheet" href="/common/addToCart/addTocart.css" />
+        <!-- responsive -->
+
+        <!-- components -->
+        <!-- header css -->
+        <link rel="stylesheet" href="/components/Header.css" />
+        <!-- styles css -->
+        <link rel="stylesheet" href="/components/styles.css" />
+        <!-- footer css -->
+        <link rel="stylesheet" href="/components/Footer.css" />
+
+        <!-- font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <!-- embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- library swiperJS  -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+        <!-- cart -->
+        <div class="cart">
+            <h2 class="cart-title">your cart</h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box">
+                    <img src="" alt="" class="cart-img" />
+                    <div class="cart-detail">
+                        <h2 class="cart-product-title">Casual black polo</h2>
+                        <span class="cart-price">$100</span>
+                        <div class="cart-quantity">
+                            <button class="decrement">-</button>
+                            <span class="number">1</span>
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div> -->
+                <div class="total">
+                    <div class="total-title">total</div>
+                    <div class="total-price">$0</div>
+                </div>
+
+                <button class="btn-buy">buy now</button>
+                <!-- nut close -->
+                <i class="fa-solid fa-xmark cart-close"></i>
+            </div>
+        </div>
+
+        <!-- header -->
+        <header class="header fixed">
+            <div class="container">
+                <div class="body-header">
+                    <!-- logo -->
+                    <a href="#" class="img-logo">
+                        <img
+                            style="max-height: 50px"
+                            src="/image/logo.png"
+                            alt=""
+                            class="logo"
+                        />
+                    </a>
+                    <!-- navbar -->
+                    <nav class="navbar">
+                        <ul>
+                            <li>
+                                <a href="/introduce/introduce.html"
+                                    >GIỚI THIỆU</a
+                                >
+                            </li>
+                            <li><a href="#!">Chó cảnh</a></li>
+                            <li><a href="#!">Mèo cảnh</a></li>
+                            <li><a href="#!">ĐỒ ĂN</a></li>
+                            <li><a href="#!">PHỤ KIỆN</a></li>
+                            <li><a href="#!">TIN TỨC</a></li>
+                            <li><a href="#!">LIÊN HỆ</a></li>
+                        </ul>
+                    </nav>
+                    <!-- action -->
+                    <div class="action">
+                        <a href="#!" class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <form action="" class="form-search">
+                                <div class="triangle"></div>
+                                <input type="search" name="" id="" />
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </a>
+
+                        <a href="#!" class="login">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+
+                        <!-- login -->
+                        <template id="modal-login">
+                            <h1 class="heading">Đăng nhập</h1>
+                            <form action="" class="form-sign">
+                                <label for=""
+                                    >Tên tài khoản hoặc địa chỉ email*</label
+                                >
+                                <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="username"
+                                />
+
+                                <label for="">Mật khẩu*</label>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    placeholder="password"
+                                />
+                                <div class="wrapper">
+                                    <button type="submit">Đăng nhập</button>
+                                    <a href="#!">Quên mật khẩu</a>
+                                </div>
+                            </form>
+                        </template>
+
+                        <a href="#!" class="store cart-icon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <!-- phan hero -->
+            <div class="hero">
+                <div class="wrapper-hero">
+                    <div class="wrapper-container">
+                        <div class="container">
+                            <div class="body-hero">
+                                <h1 class="title">
+                                    chester <br />
+                                    is a champion dog
+                                </h1>
+                                <p class="sub-title">
+                                    be sure to feed him like one
+                                </p>
+                                <p class="desc">
+                                    Vestibulum quis porttitor dui! Quisque
+                                    viverra nunc mi, a pulvinar purus condim
+                                    entum a.
+                                    <br />
+                                    Aliquam condimentum mattis neque sed pretium
+                                    …
+                                </p>
+                                <a href="#!" class="btn">STOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-container">
+                        <div class="container">
+                            <div class="body-hero">
+                                <h1 class="title">
+                                    OUR STORY
+                                    <br />
+                                    FOOD FACTORY
+                                </h1>
+
+                                <p class="desc">FROM 1989 TO 2015 AND NOW</p>
+                                <p class="sub-title">
+                                    Vestibulum quis porttitor dui! Quisque
+                                    viverra nunc mi, a pulvinar purus condim
+                                    entum a.
+                                    <br />
+                                    Aliquam condimentum mattis neque sed pretium
+                                    …
+                                </p>
+                                <a href="#!" class="btn">STOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-container">
+                        <div class="container">
+                            <div class="body-hero">
+                                <h1 class="title">
+                                    OUR STORY <br />
+                                    new arrivals
+                                </h1>
+                                <p class="sub-title">Sale up to 50% off</p>
+                                <p class="desc">
+                                    Vestibulum quis porttitor dui! Quisque
+                                    viverra nunc mi, a pulvinar purus condim
+                                    entum a.
+                                    <br />
+                                    Aliquam condimentum mattis neque sed pretium
+                                    …
+                                </p>
+                                <a href="#!" class="btn">STOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- phan features -->
+            <div class="features">
+                <div class="container">
+                    <div class="body-features">
+                        <!-- wrapper 1 -->
+                        <section class="wrapper">
+                            <figure class="pic">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M156.6 384.9L125.7 354c-8.5-8.5-11.5-20.8-7.7-32.2c3-8.9 7-20.5 11.8-33.8L24 288c-8.6 0-16.6-4.6-20.9-12.1s-4.2-16.7 .2-24.1l52.5-88.5c13-21.9 36.5-35.3 61.9-35.3l82.3 0c2.4-4 4.8-7.7 7.2-11.3C289.1-4.1 411.1-8.1 483.9 5.3c11.6 2.1 20.6 11.2 22.8 22.8c13.4 72.9 9.3 194.8-111.4 276.7c-3.5 2.4-7.3 4.8-11.3 7.2l0 82.3c0 25.4-13.4 49-35.3 61.9l-88.5 52.5c-7.4 4.4-16.6 4.5-24.1 .2s-12.1-12.2-12.1-20.9l0-107.2c-14.1 4.9-26.4 8.9-35.7 11.9c-11.2 3.6-23.4 .5-31.8-7.8zM384 168a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
+                                    />
+                                </svg>
+                            </figure>
+                            <div class="info">
+                                <h3 class="title">FREE SHIPPING</h3>
+                                <p class="sub-title">All Order Over $150</p>
+                            </div>
+                        </section>
+                        <!-- wrapper 2 -->
+                        <section class="wrapper">
+                            <section class="wrapper">
+                                <figure class="pic">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M400 96l0 .7c-5.3-.4-10.6-.7-16-.7L256 96c-16.5 0-32.5 2.1-47.8 6c-.1-2-.2-4-.2-6c0-53 43-96 96-96s96 43 96 96zm-16 32c3.5 0 7 .1 10.4 .3c4.2 .3 8.4 .7 12.6 1.3C424.6 109.1 450.8 96 480 96l11.5 0c10.4 0 18 9.8 15.5 19.9l-13.8 55.2c15.8 14.8 28.7 32.8 37.5 52.9l13.3 0c17.7 0 32 14.3 32 32l0 96c0 17.7-14.3 32-32 32l-32 0c-9.1 12.1-19.9 22.9-32 32l0 64c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-32-128 0 0 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-64c-34.9-26.2-58.7-66.3-63.2-112L68 304c-37.6 0-68-30.4-68-68s30.4-68 68-68l4 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-4 0c-11 0-20 9-20 20s9 20 20 20l31.2 0c12.1-59.8 57.7-107.5 116.3-122.8c12.9-3.4 26.5-5.2 40.5-5.2l128 0zm64 136a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"
+                                        />
+                                    </svg>
+                                </figure>
+                                <div class="info">
+                                    <h3 class="title">15% DISCOUNT</h3>
+                                    <p class="sub-title">For Firts Order</p>
+                                </div>
+                            </section>
+                        </section>
+                        <!-- wrapper 3 -->
+                        <section class="wrapper">
+                            <figure class="pic">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L80 128c-8.8 0-16-7.2-16-16s7.2-16 16-16l368 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L64 32zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                                    />
+                                </svg>
+                            </figure>
+                            <div class="info">
+                                <h3 class="title">SECURE PAYMENT</h3>
+                                <p class="sub-title">Confirmed</p>
+                            </div>
+                        </section>
+                        <!-- wrapper 4 -->
+                        <section class="wrapper">
+                            <figure class="pic">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                    fill="currentColor"
+                                >
+                                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M190.5 68.8L225.3 128l-1.3 0-72 0c-22.1 0-40-17.9-40-40s17.9-40 40-40l2.2 0c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40L32 128c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l448 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-41.6 0c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88l-2.2 0c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0L152 0C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40l-72 0-1.3 0 34.8-59.2C329.1 55.9 342.9 48 357.8 48l2.2 0c22.1 0 40 17.9 40 40zM32 288l0 176c0 26.5 21.5 48 48 48l144 0 0-224L32 288zM288 512l144 0c26.5 0 48-21.5 48-48l0-176-192 0 0 224z"
+                                    />
+                                </svg>
+                            </figure>
+                            <div class="info">
+                                <h3 class="title">AWESOME GIFT</h3>
+                                <p class="sub-title">Every Month</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- phan shopping dog -->
+            <div class="shopping">
+                <div class="container">
+                    <div class="body-shopping">
+                        <!-- heading -->
+                        <section class="heading">
+                            <h2 class="title">chó cảnh</h2>
+                            <figure class="img-bell">
+                                <img src="/image/sleigh-bell.svg" alt="" />
+                            </figure>
+                        </section>
+                        <!-- product list -->
+                        <div class="list-product">
+                            <!-- item 1 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-1.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> Chó cảnh</span>
+                                    <a class="product-name">
+                                        chó Doberman Pinscher
+                                    </a>
+                                    <span class="price-product"
+                                        >8.875.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-2.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> Chó cảnh</span>
+                                    <a class="product-name">
+                                        chó Phú Quốc thuần chủng
+                                    </a>
+                                    <span class="price-product"
+                                        >5.050.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-3.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> Chó cảnh</span>
+                                    <a class="product-name"> Chó Becgie </a>
+                                    <span class="price-product"
+                                        >3.089.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-4.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> Chó cảnh</span>
+                                    <a class="product-name"> chó Alaska </a>
+                                    <span class="price-product"
+                                        >11.090.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 5 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-5.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> Chó cảnh</span>
+                                    <a class="product-name">
+                                        Chó boston Terrier thuần chủng
+                                    </a>
+                                    <span class="price-product"
+                                        >10.650.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 6 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-6.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> Chó cảnh</span>
+                                    <a class="product-name">
+                                        Chó American Bully
+                                    </a>
+                                    <span class="price-product"
+                                        >9.025.800 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 7 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-7.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> Chó cảnh</span>
+                                    <a class="product-name">
+                                        Đàn chó Golden 4 tháng
+                                    </a>
+                                    <span class="price-product"
+                                        >9.025.800 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 8 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-8.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> Chó cảnh</span>
+                                    <a class="product-name">
+                                        Đàn bulldog anh 4 tháng
+                                    </a>
+                                    <span class="price-product"
+                                        >8.562.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button see more -->
+                        <div class="wrapper-btn">
+                            <a href="#!" class="btn">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- phan quote -->
+            <div class="quote">
+                <img src="/image/quote-pic.jpg" alt="" class="pic-quote" />
+                <div class="container">
+                    <div class="body-quote">
+                        <h2 class="title">We care for your pets</h2>
+
+                        <p class="sub-title">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Molestias, repudiandae ad? In quod odio,
+                            pariatur tempore unde praesentium expedita nisi sed
+                            sequi quos eum porro accusamus ut eos maiores at.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- shopping cat -->
+            <div class="shopping">
+                <div class="container">
+                    <div class="body-shopping">
+                        <!-- heading -->
+                        <section class="heading">
+                            <h2 class="title">đồ ăn</h2>
+                            <figure class="img-bell">
+                                <img src="/image/sleigh-bell.svg" alt="" />
+                            </figure>
+                        </section>
+                        <!-- product list -->
+                        <div class="list-product">
+                            <!-- item 1 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-9.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Mèo nhân sư không lông – Sphynx
+                                    </a>
+                                    <span class="price-product"
+                                        >8929000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-10.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Mèo Mỹ tai xoắn – American Curl
+                                    </a>
+                                    <span class="price-product"
+                                        >4521000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-11.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Mèo Nga mắt xanh – Russian Blue
+                                    </a>
+                                    <span class="price-product"
+                                        >6897000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-12.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Mèo Anh lông dài – British Longhair
+                                    </a>
+                                    <span class="price-product"
+                                        >5769000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 5 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-13.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Mèo Anh lông ngắn – British Shorthair
+                                    </a>
+                                    <span class="price-product"
+                                        >8564000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 6 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-14.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Mèo Thổ Nhĩ Kỳ Turkish Angora
+                                    </a>
+                                    <span class="price-product"
+                                        >7528000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 7 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-15.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Mèo Van Thổ – Turkish Van
+                                    </a>
+                                    <span class="price-product"
+                                        >6582000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 8 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-16.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Mèo Ba Tư lông ngắn – Exotic
+                                    </a>
+                                    <span class="price-product"
+                                        >5589,000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button see more -->
+                        <div class="wrapper-btn">
+                            <a href="#!" class="btn">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- image -->
+            <div class="wrapper-image">
+                <figure class="pic">
+                    <img src="/image/vet-doctor.jpg" alt="" />
+                </figure>
+                <figure class="pic">
+                    <img src="/image/white cat.jpg" alt="" />
+                </figure>
+            </div>
+            <!-- shopping foods -->
+            <div class="shopping">
+                <div class="container">
+                    <div class="body-shopping">
+                        <!-- heading -->
+                        <section class="heading">
+                            <h2 class="title">đồ ăn</h2>
+                            <figure class="img-bell">
+                                <img src="/image/sleigh-bell.svg" alt="" />
+                            </figure>
+                        </section>
+                        <!-- product list -->
+                        <div class="list-product">
+                            <!-- item 1 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-17.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Thức ăn đóng hộp Whiskas Cá Biển
+                                    </a>
+                                    <span class="price-product"
+                                        >35.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-18.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Royal Canin – Medium junior 4kg
+                                    </a>
+                                    <span class="price-product"
+                                        >453.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-19.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Snack Sleeky Chews Original các size
+                                    </a>
+                                    <span class="price-product"
+                                        >35.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-20.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Whiskas tuna 1.2kg
+                                    </a>
+                                    <span class="price-product"
+                                        >189.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 5 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-21.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Pate Smartheart lon vị bò và cưu cho chó
+                                        400gr
+                                    </a>
+                                    <span class="price-product"
+                                        >35.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 6 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-22.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Pate Monge cá hồi và lê 100g
+                                    </a>
+                                    <span class="price-product"
+                                        >30.500 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 7 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-23.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Me-O – Thức ăn Meo kitten 1.1kg
+                                    </a>
+                                    <span class="price-product"
+                                        >120.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                            <!-- item 8 -->
+                            <div class="item">
+                                <figure class="pic">
+                                    <img src="/image/product-24.jpg" alt="" />
+                                </figure>
+                                <div class="info">
+                                    <span class="heading-info"> đồ ăn</span>
+                                    <a class="product-name">
+                                        Sốt Gà Cá Ngừ Whiskas cho mèo 85g
+                                    </a>
+                                    <span class="price-product"
+                                        >25.000 VND
+                                    </span>
+                                    <a href="#!" class="btn add-to-cart"
+                                        ><span>add to cart</span></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button see more -->
+                        <div class="wrapper-btn">
+                            <a href="#!" class="btn">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- useful infomation -->
+            <div class="useful-info">
+                <div class="container">
+                    <div class="body-useful-info">
+                        <!-- heading -->
+                        <section class="heading">
+                            <h2 class="title">thông tin hữu ích</h2>
+                            <figure class="bell-icon">
+                                <img src="/image/sleigh-bell.svg" alt="" />
+                            </figure>
+                        </section>
+                        <!-- slider -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- slide 1 -->
+                                <div class="swiper-slide">
+                                    <figure class="pic">
+                                        <img
+                                            src="/image/useful-info-pic-1.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="circle">
+                                        <p class="day">08</p>
+                                        <p class="month">Th3</p>
+                                    </div>
+                                    <article class="info">
+                                        <h3 class="title">
+                                            Duis luctus elit nisi, et cursus
+                                            magna pellentesque non.
+                                        </h3>
+                                        <p class="desc">
+                                            Chế độ ăn cho chó con Chó con từ 2
+                                            tháng tuổi đến 6 tháng [...]
+                                        </p>
+                                        <a href="" class="see-more">Xem thêm</a>
+                                    </article>
+                                </div>
+                                <!-- slide 2 -->
+                                <div class="swiper-slide">
+                                    <figure class="pic">
+                                        <img
+                                            src="/image/useful-info-pic-2.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="circle">
+                                        <p class="day">08</p>
+                                        <p class="month">Th3</p>
+                                    </div>
+                                    <article class="info">
+                                        <h3 class="title">
+                                            Duis luctus elit nisi, et cursus
+                                            magna pellentesque non.
+                                        </h3>
+                                        <p class="desc">
+                                            Chế độ ăn cho chó con Chó con từ 2
+                                            tháng tuổi đến 6 tháng [...]
+                                        </p>
+                                        <a href="" class="see-more">Xem thêm</a>
+                                    </article>
+                                </div>
+                                <!-- slide 3 -->
+                                <div class="swiper-slide">
+                                    <figure class="pic">
+                                        <img
+                                            src="/image/useful-info-pic-3.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="circle">
+                                        <p class="day">08</p>
+                                        <p class="month">Th3</p>
+                                    </div>
+                                    <article class="info">
+                                        <h3 class="title">
+                                            Duis luctus elit nisi, et cursus
+                                            magna pellentesque non.
+                                        </h3>
+                                        <p class="desc">
+                                            Chế độ ăn cho chó con Chó con từ 2
+                                            tháng tuổi đến 6 tháng [...]
+                                        </p>
+                                        <a href="" class="see-more">Xem thêm</a>
+                                    </article>
+                                </div>
+                                <!-- slide 4 -->
+                                <div class="swiper-slide">
+                                    <figure class="pic">
+                                        <img
+                                            src="/image/useful-info-pic-4.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="circle">
+                                        <p class="day">08</p>
+                                        <p class="month">Th3</p>
+                                    </div>
+                                    <article class="info">
+                                        <h3 class="title">
+                                            Duis luctus elit nisi, et cursus
+                                            magna pellentesque non.
+                                        </h3>
+                                        <p class="desc">
+                                            Chế độ ăn cho chó con Chó con từ 2
+                                            tháng tuổi đến 6 tháng [...]
+                                        </p>
+                                        <a href="" class="see-more">Xem thêm</a>
+                                    </article>
+                                </div>
+                                <!-- slide 5 -->
+                                <div class="swiper-slide">
+                                    <figure class="pic">
+                                        <img
+                                            src="/image/useful-info-pic-5.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="circle">
+                                        <p class="day">08</p>
+                                        <p class="month">Th3</p>
+                                    </div>
+                                    <article class="info">
+                                        <h3 class="title">
+                                            Duis luctus elit nisi, et cursus
+                                            magna pellentesque non.
+                                        </h3>
+                                        <p class="desc">
+                                            Chế độ ăn cho chó con Chó con từ 2
+                                            tháng tuổi đến 6 tháng [...]
+                                        </p>
+                                        <a href="" class="see-more">Xem thêm</a>
+                                    </article>
+                                </div>
+                                <!-- slide 6 -->
+                                <div class="swiper-slide">
+                                    <figure class="pic">
+                                        <img
+                                            src="/image/useful-info-pic-6.png"
+                                            alt=""
+                                        />
+                                    </figure>
+                                    <div class="circle">
+                                        <p class="day">08</p>
+                                        <p class="month">Th3</p>
+                                    </div>
+                                    <article class="info">
+                                        <h3 class="title">
+                                            Duis luctus elit nisi, et cursus
+                                            magna pellentesque non.
+                                        </h3>
+                                        <p class="desc">
+                                            Chế độ ăn cho chó con Chó con từ 2
+                                            tháng tuổi đến 6 tháng [...]
+                                        </p>
+                                        <a href="" class="see-more">Xem thêm</a>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                        <!-- action -->
+                        <div class="action">
+                            <a href="#!" class="btn">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="body-footer">
+                    <div class="column">
+                        <h3 class="title">Điều hướng</h3>
+                        <ul>
+                            <li><a href="#!">Trang chủ</a></li>
+                            <li><a href="#!">Về chúng tôi</a></li>
+                            <li><a href="#!">Sản phẩm</a></li>
+                            <li><a href="#!">Điểm tin hữu ích</a></li>
+                            <li><a href="#!">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <figure class="logo">
+                            <img src="/image/logo-footer.png" alt="" />
+                        </figure>
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Amet laboriosam eum error recusandae quia
+                            officia?
+                        </p>
+                        <form action="" class="form-group">
+                            <input
+                                type="email"
+                                name=""
+                                id=""
+                                placeholder="email"
+                            />
+                            <button type="submit">Gửi</button>
+                        </form>
+                    </div>
+
+                    <div class="column">
+                        <h3 class="title">Thông tin liên hệ</h3>
+                        <ul>
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    319 c16 Lý Thường Kiệt, Phường 15, Quận 11,
+                                    Tp.HCM</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-solid fa-phone"></i
+                                    >0987654321</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-solid fa-envelope"></i
+                                    >abc@gmail.com</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-solid fa-sack-dollar"></i
+                                    >demonhunterp</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- <script src="../common/addToCart/addToCart.js"></script> -->
+        <script type="module" src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+.shopping .body-shopping .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.shopping .body-shopping .heading .title {
+    color: #3c3451;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.shopping .body-shopping .heading .img-bell {
+    width: 100px;
+    height: 62px;
+}
+.shopping .body-shopping .heading .img-bell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* list product */
+.list-product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem 3rem;
+    margin-top: 6rem;
+}
+.list-product .item {
+    width: 278px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+.list-product .item:hover {
+    box-shadow: 0 2px 5px 7px rgba(0, 0, 0, 0.4);
+}
+.list-product .item .pic {
+    width: 278px;
+    height: 278px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.list-product .item .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.3s;
+}
+.list-product .item .pic img:hover {
+    scale: 1.1;
+}
+.list-product .item .info .heading-info {
+    font-size: 14px;
+    color: #bab7b7;
+    text-transform: uppercase;
+}
+.list-product .item .info {
+    text-align: center;
+    padding-block: 8px 15px;
+    background: #f9f9f9;
+}
+.list-product .item .info .product-name {
+    display: block;
+    color: #353535;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+.list-product .item .info .product-name:hover {
+    color: orange;
+    cursor: pointer;
+}
+.list-product .item .info .price-product {
+    color: red;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+/* button add product */
+.list-product .item .btn {
+    display: block;
+    --height: 4.5rem;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    position: relative;
+
+    background-color: #000;
+    overflow: hidden;
+}
+.list-product .item .btn span {
+    position: relative;
+}
+
+.list-product .item .btn::before {
+    content: "";
+    width: 0;
+    height: 100%;
+
+    background-color: #30b5b2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: width 0.3s;
+}
+.list-product .item .btn:hover::before {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+
+/* button see more */
+.wrapper-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.wrapper-btn .btn {
+    --height: 4.5rem;
+    width: 160px;
+    border-radius: 5px;
+}

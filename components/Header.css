@@ -1,0 +1,89 @@
+.header {
+    padding-top: 15px;
+    background-color: rgb(31, 114, 114);
+}
+.fixed {
+    position: sticky;
+    top: -15px;
+    z-index: 9;
+}
+.header .body-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.header .body-header .navbar ul {
+    display: flex;
+    align-items: center;
+}
+.header .navbar ul li a {
+    color: #000;
+    font-size: 1.6rem;
+    padding: 8px 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header .navbar ul li a:hover {
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .action a {
+    color: #000;
+    padding: 8px 10px;
+}
+.header .action a i {
+    font-size: 1.8rem;
+}
+.header .action a:hover {
+    color: #ccc;
+}
+/* search */
+.header .action .search {
+    position: relative;
+}
+
+.header .action .search .form-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 70px;
+
+    background-color: #fff;
+    border-radius: 10px;
+
+    position: absolute;
+    bottom: -80px;
+    right: -2rem;
+    opacity: 0;
+    visibility: hidden;
+}
+.header .action .search:hover .form-search {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .action .search .form-search input {
+    width: 90%;
+    padding: 5px 40px 5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.header .action .search .form-search button {
+    position: absolute;
+    right: 7%;
+    cursor: pointer;
+}
+/* phần mũi tên */
+.header .action .search .form-search .triangle {
+    display: inline-block;
+    border: 15px solid;
+    border-color: transparent transparent #f0e8e8 transparent;
+
+    position: absolute;
+    top: -29px;
+    right: 5.9%;
+}

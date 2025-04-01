@@ -1,0 +1,295 @@
+.hero {
+    overflow: hidden;
+}
+.hero .wrapper-hero {
+    display: flex;
+    align-items: center;
+    transition: transform 1.5s;
+}
+
+.hero .wrapper-hero .wrapper-container {
+    width: 100%;
+    height: 100vh;
+    flex-shrink: 0;
+    background-position: center;
+}
+.hero .wrapper-hero .wrapper-container:first-child {
+    background-image: url(/image/backgroud1.jpg);
+}
+.hero .wrapper-hero .wrapper-container:nth-child(2) {
+    background-image: url(/image/backgroud2.jpg);
+}
+.hero .wrapper-hero .wrapper-container:nth-child(2) .body-hero {
+    text-align: center;
+}
+.hero .wrapper-hero .wrapper-container:nth-child(2) .body-hero .sub-title {
+    line-height: 1.6;
+}
+.hero .wrapper-hero .wrapper-container:last-child {
+    background-image: url(/image/backgroud3.jpg);
+    background-size: cover;
+}
+.hero .wrapper-hero .wrapper-container .body-hero {
+    margin-top: 20rem;
+}
+.hero .wrapper-hero .body-hero .title {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+.hero .wrapper-hero .body-hero .sub-title,
+.hero .wrapper-hero .body-hero .desc {
+    color: #fff;
+    font-size: 2rem;
+}
+.hero .wrapper-hero .body-hero .sub-title {
+    margin-bottom: 2rem;
+}
+.hero .wrapper-hero .body-hero .desc {
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+/* phan features */
+.features {
+    background-color: #30b5b2;
+    padding: 50px 0;
+}
+
+.features .body-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features .body-features .wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+.features .body-features .wrapper .pic {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+.features .body-features .wrapper .pic svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.features .body-features .wrapper .info .title {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.features .body-features .wrapper .info .sub-title {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/* phan quote */
+.quote {
+    width: 100%;
+    height: 38rem;
+    position: relative;
+    margin-top: 10rem;
+}
+.quote .container {
+    position: relative;
+    height: 100%;
+}
+.quote .body-quote {
+    width: 60rem;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+
+    right: 0;
+}
+.quote .pic-quote {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.quote .body-quote .title,
+.quote .body-quote .sub-title {
+    color: #fff;
+    letter-spacing: 1px;
+}
+.quote .body-quote .title {
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.quote .body-quote .sub-title {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+/* phan wrapper image */
+.wrapper-image {
+    display: flex;
+    align-items: center;
+    height: 380px;
+    margin-top: 10rem;
+    position: relative;
+}
+.wrapper-image .pic {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.wrapper-image .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.5s;
+}
+.wrapper-image .pic img:hover {
+    scale: 1.2;
+}
+
+/* phan useful info */
+.useful-info {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    margin-top: 6rem;
+}
+
+.useful-info .body-useful-info .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.useful-info .body-useful-info .heading .title {
+    color: #3c3451;
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", serif;
+}
+
+.useful-info .body-useful-info .heading .bell-icon {
+    width: 100px;
+    height: 62px;
+}
+.useful-info .body-useful-info .heading .bell-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+/* slider useful infomation */
+.swiper {
+    margin-top: 7rem;
+}
+.swiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 3rem;
+    cursor: pointer;
+}
+.swiper .swiper-wrapper .swiper-slide {
+    margin-right: 0 !important;
+    height: 314px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.swiper .swiper-wrapper .swiper-slide .pic {
+    width: 100%;
+    height: 21.4rem;
+    overflow: hidden;
+}
+.swiper .swiper-wrapper .swiper-slide .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.3s;
+}
+.swiper .swiper-wrapper .swiper-slide .pic img:hover {
+    scale: 1.1;
+}
+.swiper .swiper-wrapper .swiper-slide .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 44.8px;
+    height: 44.8px;
+    background-color: #30b5b2;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+.swiper .swiper-wrapper .swiper-slide .circle .day,
+.swiper .swiper-wrapper .swiper-slide .circle .month {
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.swiper .swiper-wrapper .swiper-slide .circle .month {
+    font-size: 12px;
+    line-height: 1.4;
+}
+.swiper .swiper-wrapper .swiper-slide .info {
+    width: 323px;
+    padding: 25px 20px 25px 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+.swiper .swiper-wrapper .swiper-slide .info .title {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.swiper .swiper-wrapper .swiper-slide .info .desc {
+    color: #767676;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 13px;
+    margin-bottom: 2rem;
+}
+.swiper .swiper-wrapper .swiper-slide .info .see-more {
+    color: #e96094;
+    font-size: 14px;
+    font-weight: 600;
+}
+.swiper .swiper-wrapper .swiper-slide .info .see-more:hover {
+    color: #333;
+}
+
+/* action */
+.useful-info .body-useful-info .action {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+.useful-info .body-useful-info .action .btn {
+    transition: box-shadow 0.4s, translate 0.4s;
+}
+.useful-info .body-useful-info .action .btn:hover {
+    translate: 0 -15px;
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.2);
+}

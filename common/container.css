@@ -1,0 +1,39 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+input,
+select,
+button,
+textarea {
+    font-size: inherit;
+    font-family: inherit;
+    /* border: none;
+    outline: none; */
+}
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+}

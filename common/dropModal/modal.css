@@ -1,0 +1,86 @@
+.backdrop-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-duration: 0.3s;
+}
+
+.backdrop-modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-modal {
+    width: min(600px, 70%);
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    position: relative;
+    scale: 0;
+    transition: scale 0.3s;
+}
+.backdrop-modal.show .container-modal {
+    scale: 1;
+}
+
+.close-modal {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+/* css modalLogin */
+.backdrop-modal .container-modal .heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.backdrop-modal .container-modal .form-sign label {
+    display: block;
+    margin-bottom: 10px;
+}
+.backdrop-modal .container-modal .form-sign input {
+    width: 100%;
+    padding-block: 4px;
+    padding-left: 10px;
+}
+.backdrop-modal .container-modal .form-sign input:first-of-type {
+    margin-bottom: 10px;
+}
+
+.backdrop-modal .container-modal .form-sign .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.backdrop-modal .container-modal .form-sign button {
+    width: 100px;
+    height: 50px;
+    font-weight: 600;
+
+    border-radius: 5px;
+
+    background-color: rgb(8, 140, 140);
+    cursor: pointer;
+    transition-property: color, background-color;
+    transition-duration: 0.3s;
+}
+
+.backdrop-modal .container-modal .form-sign button:hover {
+    color: #fff;
+    background-color: blue;
+}
+.backdrop-modal .container-modal .form-sign a {
+    color: #000;
+}
+.backdrop-modal .container-modal .form-sign a:hover {
+    color: blue;
+}
