@@ -96,15 +96,19 @@ export function AddToCart() {
         cartBoxes.forEach((cartBox) => {
             const cartPriceElement = cartBox.querySelector(".cart-price");
             const numberElement = cartBox.querySelector(".number");
-            const price = parseFloat(
-                cartPriceElement.textContent.replace("$", "")
-            );
+            let price = cartPriceElement.textContent.replace("VND", "").trim();
+            price = parseInt(price.split(".").join(""));
+
+            // const price = parseFloat(
+            //     cartPriceElement.textContent.replace("VND", "")
+            // );
             const quantity = parseInt(numberElement.textContent);
 
             total += price * quantity;
+            total = total.toLocaleString("vi-VN") + " VND";
         });
 
-        totalPrice.textContent = `$${total}`;
+        totalPrice.textContent = total;
     };
 
     // let cartItemCount = 0;
