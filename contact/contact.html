@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- reset css -->
+        <link rel="stylesheet" href="/base/reset.css" />
+
+        <!-- common -->
+        <link rel="stylesheet" href="/common/container.css" />
+        <link rel="stylesheet" href="/common/button.css" />
+        <link rel="stylesheet" href="/common/dropModal/modal.css" />
+        <link rel="stylesheet" href="/common/shopping.css" />
+        <!-- add  to cart -->
+        <link rel="stylesheet" href="/common/addToCart/addTocart.css" />
+        <!-- responsive -->
+
+        <!-- components -->
+        <!-- header css -->
+        <link rel="stylesheet" href="/components/Header.css" />
+        <!-- styles css -->
+        <link rel="stylesheet" href="/components/styles.css" />
+        <!-- footer css -->
+        <link rel="stylesheet" href="/components/Footer.css" />
+
+        <!-- font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <!-- embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- library swiperJS  -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <!-- css of shopDog -->
+        <link rel="stylesheet" href="contact.css" />
+    </head>
+    <body>
+        <!-- cart -->
+        <div class="cart">
+            <h2 class="cart-title">your cart</h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box">
+                    <img src="" alt="" class="cart-img" />
+                    <div class="cart-detail">
+                        <h2 class="cart-product-title">Casual black polo</h2>
+                        <span class="cart-price">$100</span>
+                        <div class="cart-quantity">
+                            <button class="decrement">-</button>
+                            <span class="number">1</span>
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div> -->
+                <div class="total">
+                    <div class="total-title">total</div>
+                    <div class="total-price">$0</div>
+                </div>
+
+                <button class="btn-buy">buy now</button>
+                <!-- nut close -->
+                <i class="fa-solid fa-xmark cart-close"></i>
+            </div>
+        </div>
+
+        <!-- header -->
+        <header class="header fixed">
+            <div class="container">
+                <div class="body-header">
+                    <!-- logo -->
+                    <a href="#" class="img-logo">
+                        <img
+                            style="max-height: 50px"
+                            src="/image/logo.png"
+                            alt=""
+                            class="logo"
+                        />
+                    </a>
+                    <!-- navbar -->
+                    <nav class="navbar">
+                        <ul>
+                            <li>
+                                <a href="/introduce/introduce.html"
+                                    >GIỚI THIỆU</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../shopDog/shopDog.html">Chó cảnh</a>
+                            </li>
+                            <li>
+                                <a>Mèo cảnh</a>
+                            </li>
+                            <li>
+                                <a href="#!" href="">ĐỒ ĂN</a>
+                            </li>
+                            <li>
+                                <a href="../shopaccessory/shopAccessory.html"
+                                    >PHỤ KIỆN</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../news/news.html">TIN TỨC</a>
+                            </li>
+                            <li>
+                                <a style="color: #fff" href="">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- action -->
+                    <div class="action">
+                        <a href="#!" class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <form action="" class="form-search">
+                                <div class="triangle"></div>
+                                <input type="search" name="" id="" />
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </a>
+
+                        <a href="#!" class="login">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+
+                        <!-- login -->
+                        <template id="modal-login">
+                            <h1 class="heading">Đăng nhập</h1>
+                            <form action="" class="form-sign">
+                                <label for=""
+                                    >Tên tài khoản hoặc địa chỉ email*</label
+                                >
+                                <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="username"
+                                />
+
+                                <label for="">Mật khẩu*</label>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    placeholder="password"
+                                />
+                                <div class="wrapper">
+                                    <button type="submit">Đăng nhập</button>
+                                    <a href="#!">Quên mật khẩu</a>
+                                </div>
+                            </form>
+                        </template>
+
+                        <a href="#!" class="store cart-icon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main style="position: relative; overflow: hidden">
+            <img
+                style="position: absolute; inset: 0; z-index: 0; width: 100vw"
+                src="../image/bg-contact.jpg"
+                alt=""
+            />
+            <div class="contact-container" style="position: relative">
+                <h2>Liên hệ với chúng tôi</h2>
+                <form
+                    action="mailto:youremail@example.com"
+                    method="POST"
+                    enctype="text/plain"
+                >
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Gửi liên hệ</button>
+                </form>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="body-footer">
+                    <div class="column">
+                        <h3 class="title">Điều hướng</h3>
+                        <ul>
+                            <li><a href="#!">Trang chủ</a></li>
+                            <li><a href="#!">Về chúng tôi</a></li>
+                            <li><a href="#!">Sản phẩm</a></li>
+                            <li><a href="#!">Điểm tin hữu ích</a></li>
+                            <li><a href="#!">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <figure class="logo">
+                            <img src="/image/logo-footer.png" alt="" />
+                        </figure>
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Amet laboriosam eum error recusandae quia
+                            officia?
+                        </p>
+                        <form action="" class="form-group">
+                            <input
+                                type="email"
+                                name=""
+                                id=""
+                                placeholder="email"
+                            />
+                            <button type="submit">Gửi</button>
+                        </form>
+                    </div>
+
+                    <div class="column">
+                        <h3 class="title">Thông tin liên hệ</h3>
+                        <ul>
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    319 c16 Lý Thường Kiệt, Phường 15, Quận 11,
+                                    Tp.HCM</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-solid fa-phone"></i
+                                    >0987654321</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-solid fa-envelope"></i
+                                    >abc@gmail.com</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fa-solid fa-sack-dollar"></i
+                                    >demonhunterp</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- <script src="../common/addToCart/addToCart.js"></script> -->
+        <script src="contact.js"></script>
+        <script type="module" src="/Home/script.js"></script>
+    </body>
+</html>
