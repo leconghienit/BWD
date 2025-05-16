@@ -41,6 +41,12 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
+
+        <!-- aos animate-->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- cart -->
@@ -99,10 +105,18 @@
                             <li>
                                 <a href="../shopCat/shopCat.html">Mèo cảnh</a>
                             </li>
-                            <li><a href="#!">ĐỒ ĂN</a></li>
-                            <li><a href="#!">PHỤ KIỆN</a></li>
-                            <li><a href="#!">TIN TỨC</a></li>
-                            <li><a href="#!">LIÊN HỆ</a></li>
+                            <li>
+                                <a href="../shopFood/shopFood.html">ĐỒ ĂN</a>
+                            </li>
+                            <li>
+                                <a href="../shopaccessory/shopAccessory.html"
+                                    >PHỤ KIỆN</a
+                                >
+                            </li>
+                            <li><a href="../news/news.html">TIN TỨC</a></li>
+                            <li>
+                                <a href="../contact/contact.html">LIÊN HỆ</a>
+                            </li>
                         </ul>
                     </nav>
                     <!-- action -->
@@ -313,7 +327,12 @@
                 </div>
             </div>
             <!-- phan shopping dog -->
-            <div class="shopping">
+            <div
+                class="shopping"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+            >
                 <div class="container">
                     <div class="body-shopping">
                         <!-- heading -->
@@ -490,7 +509,12 @@
                 </div>
             </div>
             <!-- shopping cat -->
-            <div class="shopping">
+            <div
+                class="shopping"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+            >
                 <div class="container">
                     <div class="body-shopping">
                         <!-- heading -->
@@ -664,7 +688,12 @@
                 </figure>
             </div>
             <!-- shopping foods -->
-            <div class="shopping">
+            <div
+                class="shopping"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+            >
                 <div class="container">
                     <div class="body-shopping">
                         <!-- heading -->
@@ -830,7 +859,12 @@
                 </div>
             </div>
             <!-- useful infomation -->
-            <div class="useful-info">
+            <div
+                class="useful-info"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+            >
                 <div class="container">
                     <div class="body-useful-info">
                         <!-- heading -->
@@ -1069,5 +1103,9 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- <script src="../common/addToCart/addToCart.js"></script> -->
         <script type="module" src="script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
